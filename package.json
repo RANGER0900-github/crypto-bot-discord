@@ -1,0 +1,13 @@
+{
+  "name": "discord-crypto-price-bot",
+  "version": "1.0.0",
+  "description": "Discord slash-command bot for crypto prices using Netlify Functions",
+  "main": "netlify/functions/discord.js",
+  "scripts": {
+    "build": "npm install"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "tweetnacl": "^1.0.3"
+  }
+}

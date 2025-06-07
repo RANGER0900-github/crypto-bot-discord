@@ -1,0 +1,11 @@
+# netlify.toml
+[build]
+  functions = "netlify/functions"
+  command = "npm install"
+  publish = "public"  # your site (if any) or can be omitted if not publishing static files
+
+[functions]
+  node_bundler = "esbuild"  # optional, for faster builds with ES modules
+
+[build.environment]
+  NODE_VERSION = "18"  # ensure Node 18 for built-in fetch (or adjust as needed)
